@@ -1,0 +1,42 @@
+const wbook = SpreadsheetApp.getActive();
+const sheet = wbook.getSheetByName('Nama Sheet Kamu');
+
+function doGet() {
+  let data = [];
+
+  const rlen = sheet.getLastRow();
+  const clen = sheet.getLastColumn();
+  const rows = sheet.getRange(3, 1, rlen - 2, clen).getValues(); // Mulai dari baris 3
+
+  for (let i = 0; i < rows.length; i++) {
+    const dataRow = rows[i];
+    let record = {};
+    for (let j = 0; j < clen; j++) {
+      record[rows[0][j]] = dataRow[j];
+    }
+
+    data.push(record);
+  }
+
+  const response = {
+    "data": data
+  };
+
+  return ContentService.createTextOutput(JSON.stringify(response)).setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(request) {
+  const data = JSON.parse(request.postData.contents);
+  let response;
+
+    sheet.appendRow([
+      data.AKUN,
+    ]);
+
+    response = {
+      "success": true,
+      "message": "Sukses menyimpan data",
+    }; 
+
+  return ContentService.createTextOutput(JSON.stringify(response)).setMimeType(ContentService.MimeType.JSON);
+}

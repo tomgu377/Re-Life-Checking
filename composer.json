@@ -1,0 +1,6 @@
+{
+    "require": {
+        "chuyskywalker/rolling-curl": "*",
+        "jc21/clitable": "*"
+    }
+}
