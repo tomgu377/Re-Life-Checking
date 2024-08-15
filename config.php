@@ -3,17 +3,10 @@ $config = [
     /* [ LISENCE APIKEY CONFIGURATION ] */
     'apikey'            => 'Apikey Kamu',
 
-    /* [ PROXY WITH USER:PASS CONFIGURATION ] */
-    // 1
-    'proxyauth'         => false,                           // hidup/matikan penggunaan banyak daftar ip proxy
-    'proxyuser'         => 'USER:PW',                       // kredensial proxy
-    'proxylist'         => 'proxy.txt',                     // gunakan banyak daftar ip proxy
-
-    /* [ PROXY WITH WITHOUT USER:PASS AUTH CONFIGURATION ] */
-    // 2
-    'proxyserver'       => false,                           // hidup/matikan penggunaan 1 koneksi proxy
+    /* [ PROXY USER:PASS AUTH CONFIGURATION ] */
+    'proxyserver'       => false,                           // hidup/matikan penggunaan proxy
     'proxy_auth'        => false,
-    'proxyauth2'        => 'USER:PW',
+    'proxyuser'        => 'USER:PW',
     'serverorip_proxy'  => 'ip/domain:port or file.txt',    // gunakan 1 koneksi ke server proxy
 
     /* [ PROGRAM CONFIGURATION PROCESSING ] */
