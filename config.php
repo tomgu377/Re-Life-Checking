@@ -20,9 +20,6 @@ $config = [
     'checkingmode'      => 'full',                          // full: untuk pengecekkan keseluruhan sampai dengan balance di akun, email: hanya cek email terdaftar/tidak
     'detectgenerate'    => false,                           // otomatis detect generate empas
 
-    'hidebooking'       => false,                           // true untuk mengakftifkan penyembunyian pesanan, wajib di isi orderid dan false untuk menonaktifkan sembunyikan pesanan
-    'orderid'           => 'orderid pesanan',               // 1 orderid 1akun, wajib mode full dan thread 2
-
     /* [ SAVE CONFIGURATION ] */
     'save_on_internal'  => false,                           // hasil akan disave pada local folder
     'save_on_external'  => false,                           // hasil akan disave pada spreadsheet
