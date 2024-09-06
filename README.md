@@ -1,3 +1,5 @@
+# Re Life Checking
+Using PHP 7.2 / 8.1 / 8.2
 Persyaratan Instalasi Re-Life
 
 1. Download dan Instalasi XAMPP terbaru => https://www.apachefriends.org/download.html
