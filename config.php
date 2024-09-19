@@ -25,3 +25,12 @@ $config = [
     'save_on_external'  => false,                           // hasil akan disave pada spreadsheet
     'external_link_tosave' => 'link spreadsheet'            // google spreadsheet app script link
 ];
+
+$blocked = [
+    'skip_country' => [
+        'cn',
+    ],
+    'skip_domain' => [
+        'yahoo.com',
+    ]
+];
