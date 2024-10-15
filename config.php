@@ -14,10 +14,12 @@ $config = [
     'thread'            => 2,                               // kecepatan proses bot per detik
     'delay'             => 3,                               // jeda program berjalan
     'display'           => true,                            // menampilkan berjalannya bot
+    'timeout'           => 50,                              // 50 detik
+    'connectiontimeout' => 10,                              // 10 detik
 
     /* [ APLICATION CONFIGURATION ] */
     'appversion'        => '39.0.0.1',                      // versi aplikasi
-    'checkingmode'      => 'full',                          // full: untuk pengecekkan keseluruhan sampai dengan balance di akun, email: hanya cek email terdaftar/tidak
+    'checkingmode'      => 'full',                          // full: untuk pengecekkan keseluruhan sampai dengan balance di akun, email: hanya cek email terdaftar/tidak, account: hanya cek valid login
     'detectgenerate'    => false,                           // otomatis detect generate empas
 
     /* [ SAVE CONFIGURATION ] */
